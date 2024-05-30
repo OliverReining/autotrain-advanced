@@ -4,13 +4,13 @@ project_name: autotrain-sdxl-finetuned
 backend: local
 
 data:
-  path: data/ # store all images in this folder
-  prompt: photo of sks person # prompt for the model
+  path: D:/AI/AI-Training/AutoTrain_Dreambooth/Chira_LoRa # store all images in this folder
+  prompt: photo of sks female person, chiara sleek # prompt for the model
 
 params:
   resolution: 1024
   batch_size: 1
-  num_steps: 500
+  num_steps: 2000
   lr: 1e-4
   gradient_accumulation: 4
   mixed_precision: fp16
@@ -20,6 +20,6 @@ params:
   xl: true
 
 hub:
-  username: ${HF_USERNAME}
-  token: ${HF_TOKEN}
-  push_to_hub: true
+  username: ${HF_USERNAME=SirPusteblume}
+  token: ${HF_TOKEN=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}
+  push_to_hub: false
