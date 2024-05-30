@@ -20,6 +20,6 @@ params:
   xl: true
 
 hub:
-  username: ${HF_USERNAME=SirPusteblume}
-  token: ${HF_TOKEN=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}
+  username: ${HF_USERNAME}
+  token: ${HF_TOKEN}
   push_to_hub: false
